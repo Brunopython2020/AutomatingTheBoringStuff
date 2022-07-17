@@ -1,0 +1,33 @@
+Define, Call, Pass, Argument, Parameter:
+    To define a function is to create it, just like an assignment statement like spam = 42
+    creates the spam variable. The def statement defines the sayHello() function ➊.
+    The sayHello('Al') line ➋ calls the now-created function, sending the execution
+    to the top of the function’s code
+    This function call is also known as passing the string value 'Al' to the function.
+    A value being passed to a function in a function call is an argument.
+    The argument 'Al' is assigned to a local variable named name.
+    Variables that have arguments assigned to them are parameters.
+
+
+Behind the scenes, Python adds return None to the end of any function definition with no return statement.
+This is similar to how a while or for loop implicitly ends with a continue statement.
+Also, if you use a return statement without a value (that is, just the return keyword by itself), then None is returned.
+
+
+Local and Global Scope:
+    A variable can not exist in both global and local scope.
+    Global scope is created when the program begins.
+
+    Scopes matter for several reasons:
+
+        Code in the global scope, outside of all functions, cannot use any local variables.
+        However, code in a local scope can access global variables.
+        Code in a function’s local scope cannot use variables in any other local scope.
+        You can use the same name for different variables if they are in different scopes.
+        That is, there can be a local variable named spam and a global variable also named spam.
+
+    If you ever want to modify the value stored in a global variable from in a function, you must use a global statement on that variable.
+
+
+    
+

@@ -1,0 +1,14 @@
+The Boolean operators have an order of operations just like the math operators do.
+After any math and comparison operators evaluate, Python evaluates the not operators first,
+then the and operators, and then the or operators.
+
+In a flow control, there's the condition(which will be evaluated), the clause(block of instructions, separated by identation) and the statement it self.
+
+
+
+
+DON’T OVERWRITE MODULE NAMES
+
+When you save your Python scripts, take care not to give them a name that is used by one of Python’s modules, such as random.py, sys.py, os.py, or math.py. If you accidentally name one of your programs, say, random.py, and use an import random statement in another program, your program would import your random.py file instead of Python’s random module. This can lead to errors such as AttributeError: module 'random' has no attribute 'randint', since your random.py doesn’t have the functions that the real random module has. Don’t use the names of any built-in Python functions either, such as print() or input().
+
+Problems like these are uncommon, but can be tricky to solve. As you gain more programming experience, you’ll become more aware of the standard names used by Python’s modules and functions, and will run into these problems less frequently.
