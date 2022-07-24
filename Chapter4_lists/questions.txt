@@ -1,0 +1,88 @@
+R -> my answer
+C -> Book correction
+
+Practice Questions
+1. What is []?
+
+R: defines a list
+C: The empty list value, which is a list value that contains no items. This is similar to how '' is the empty string value.
+
+2. How would you assign the value 'hello' as the third value in a list stored in a variable named spam? (Assume spam contains [2, 4, 6, 8, 10].)
+
+R: spam.insert(2,'hello')
+C: spam[2] = 'hello' (Notice that the third value in a list is at index 2 because the first index is 0.)
+
+comment: I believe that I got this wrong because of misunderstanding of the term 'assignment'.
+
+For the following three questions, let’s say spam contains the list ['a', 'b', 'c', 'd'].
+
+3. What does spam[int(int('3' * 2) // 11)] evaluate to?
+
+R:
+-> int('3' * 2) == 33
+-> 33 // 2 == 3
+-> spam[3] == 'd'
+
+4. What does spam[-1] evaluate to?
+
+R: 'd'
+
+5. What does spam[:2] evaluate to?
+
+R: 'a', 'b'
+
+For the following three questions, let’s say bacon contains the list [3.14, 'cat', 11, 'cat', True].
+
+
+6. What does bacon.index('cat') evaluate to?
+
+R: 1
+
+7. What does bacon.append(99) make the list value in bacon look like?
+
+R: [3.14, 'cat', 11, 'cat', True, 99]
+
+8. What does bacon.remove('cat') make the list value in bacon look like?
+
+R: removes the first cat, [3.14, 11, 'cat', True, 99]
+
+9. What are the operators for list concatenation and list replication?
+
+R: +, *
+
+10. What is the difference between the append() and insert() list methods?
+
+R: append() add an item to the final position of the list, while insert() adds an item to a given position
+
+11. What are two ways to remove values from a list?
+
+R: using del or remove(item)
+
+12. Name a few ways that list values are similar to string values.
+
+R: both are interable, we can use concatenation and replication
+C: Both lists and strings can be passed to len(), have indexes and slices, be used in for loops, be concatenated or replicated, and be used with the in and not in operators.
+
+13. What is the difference between lists and tuples?
+
+R: Tuples are immutable
+C: Lists are mutable; they can have values added, removed, or changed. Tuples are immutable; they cannot be changed at all. Also, tuples are written using parentheses, ( and ), while lists use the square brackets, [ and ].
+
+14. How do you type the tuple value that has just the integer value 42 in it?
+
+R: (42,)
+
+15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?
+
+R: The tuple() and list() functions, respectively
+
+16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
+
+
+R: a reference to the memory
+C: They contain references to list values.
+
+17. What is the difference between copy.copy() and copy.deepcopy()?
+
+R: deepcopy can copy a list inside a list, copy() can copy a list.
+C: The copy.copy() function will do a shallow copy of a list, while the copy.deepcopy() function will do a deep copy of a list. That is, only copy.deepcopy() will duplicate any lists inside the list.
